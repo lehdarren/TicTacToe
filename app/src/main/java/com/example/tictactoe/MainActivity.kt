@@ -12,7 +12,6 @@ import androidx.core.content.ContextCompat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var restartButton: Button
-    private lateinit var backButton: Button
     private lateinit var topLeft: ImageButton
     private lateinit var topMiddle: ImageButton
     private lateinit var topRight: ImageButton
@@ -249,24 +248,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun endGame() {
-        topLeft.isEnabled = false
-        topMiddle.isEnabled = false
-        topRight.isEnabled = false
-        middleRight.isEnabled = false
-        middleLeft.isEnabled = false
-        center.isEnabled = false
-        bottomLeft.isEnabled = false
-        bottomRight.isEnabled = false
-        bottomMiddle.isEnabled = false
-
-        if (currentPlayer == 1) {
-            winnerText.text = resources.getString(R.string.player1_win)
-        } else {
-            winnerText.text = resources.getString(R.string.player2_win)
-        }
-
         if (gameTied()) {
             winnerText.text = resources.getString(R.string.players_tied)
+        } else {
+
+            topLeft.isEnabled = false
+            topMiddle.isEnabled = false
+            topRight.isEnabled = false
+            middleRight.isEnabled = false
+            middleLeft.isEnabled = false
+            center.isEnabled = false
+            bottomLeft.isEnabled = false
+            bottomRight.isEnabled = false
+            bottomMiddle.isEnabled = false
+
+            if (currentPlayer == 1) {
+                winnerText.text = resources.getString(R.string.player1_win)
+            } else {
+                winnerText.text = resources.getString(R.string.player2_win)
+            }
         }
     }
 
