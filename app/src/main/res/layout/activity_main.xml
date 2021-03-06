@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:columnCount="3">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/topLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#1A4500">
+
+            <ImageButton
+                android:id="@+id/topMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/topRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/middleLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/middleRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/bottomLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/bottomMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/bottomRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="@drawable/empty_square" />
+        </FrameLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/restart_button"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/winner_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/player1_turn"/>
+</LinearLayout>

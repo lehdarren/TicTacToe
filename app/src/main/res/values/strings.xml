@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="player1_turn">Player 1, choose a box</string>
+    <string name="player2_turn">Player 2, choose a box</string>
+    <string name="player1_win">Player 1 Wins!</string>
+    <string name="player2_win">Player 2 Wins!</string>
+    <string name="restart_button">Restart Game</string>
+    <string name="players_tied">Players have Tied!</string>
+</resources>
