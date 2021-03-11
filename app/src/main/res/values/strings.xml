@@ -6,4 +6,8 @@
     <string name="player2_win">Player 2 Wins!</string>
     <string name="restart_button">Restart Game</string>
     <string name="players_tied">Players have Tied!</string>
+    <string name="player_button">Compete with Players</string>
+    <string name="ai_button">Compete with AI</string>
+    <string name="player_title">Playing Against Another Player</string>
+    <string name="ai_title">Playing Against the AI</string>
 </resources>
